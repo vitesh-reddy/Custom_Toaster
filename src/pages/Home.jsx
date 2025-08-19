@@ -8,7 +8,7 @@ const Home = () => {
       <div className="text-center space-y-8">
         <div className="relative">
           <h1 className="text-6xl sm:text-8xl font-black mb-4">
-            <span className="bg-gradient-to-br from-violet-600 via-purple-600 to-fuchsia-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-br from-orange-600 via-orange-600 to-fuchsia-600 bg-clip-text text-transparent">
               Custom
             </span>
             <br/>
@@ -28,7 +28,7 @@ const Home = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
             to="/guide"
-            className="group px-8 py-4 bg-gradient-to-r from-violet-600 to-purple-600 text-white rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+            className="group px-8 py-4 bg-gradient-to-r from-orange-600 to-orange-600 text-white rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
           >
             <span className="mr-2">🚀</span>
             Get Started
@@ -37,7 +37,7 @@ const Home = () => {
           
           <Link
             to="/playground"
-            className="px-8 py-4 bg-white/80 backdrop-blur text-gray-700 rounded-2xl font-bold text-lg border border-violet-200 hover:bg-white hover:shadow-lg hover:scale-105 transition-all duration-300"
+            className="px-8 py-4 bg-white/80 backdrop-blur text-gray-700 rounded-2xl font-bold text-lg border border-orange-200 hover:bg-white hover:shadow-lg hover:scale-105 transition-all duration-300"
           >
             <span className="mr-2">🎮</span>
             Try Live Demo
@@ -70,17 +70,17 @@ const Home = () => {
           </p>
         </div>
         
-        <div className="group p-8 bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl border border-purple-200/50 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+        <div className="group p-8 bg-gradient-to-br from-orange-50 to-pink-50 rounded-3xl border border-orange-200/50 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
           <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">🔄</div>
-          <h3 className="text-2xl font-bold text-purple-900 mb-4">Promise Magic</h3>
-          <p className="text-purple-700 leading-relaxed">
+          <h3 className="text-2xl font-bold text-orange-900 mb-4">Promise Magic</h3>
+          <p className="text-orange-700 leading-relaxed">
             Automatically handles async operations with loading states and result notifications
           </p>
         </div>
       </div>
 
       <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 sm:p-12 overflow-hidden">
-        <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-violet-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-orange-500/20 to-orange-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-full blur-2xl"></div>
         
         <div className="relative z-10">
@@ -90,7 +90,7 @@ const Home = () => {
           <div className="bg-gray-800 rounded-2xl p-6 font-mono text-sm overflow-x-auto">
             <div className="text-gray-400 mb-2">// Import and use</div>
             <div className="text-cyan-400">
-              <span className="text-purple-400">import</span> {`{ customToast }`} <span className="text-purple-400">from</span> <span className="text-green-400">'./utils/CustomToast'</span>
+              <span className="text-orange-400">import</span> {`{ customToast }`} <span className="text-orange-400">from</span> <span className="text-green-400">'./utils/CustomToast'</span>
             </div>
             <div className="mt-4 text-gray-400">// Show beautiful notifications</div>
             <div className="text-yellow-400">customToast<span className="text-white">.</span><span className="text-green-400">success</span><span className="text-white">(</span><span className="text-green-400">'Data saved! 🎉'</span><span className="text-white">)</span></div>
@@ -105,14 +105,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="text-center bg-gradient-to-r from-violet-100 to-purple-100 rounded-3xl p-12 border border-violet-200/50">
-        <h2 className="text-3xl font-bold text-violet-900 mb-4">
+      <div className="text-center bg-gradient-to-r from-orange-100 to-orange-100 rounded-3xl p-12 border border-orange-200/50">
+        <h2 className="text-3xl font-bold text-orange-900 mb-4">
           Created with 💜
         </h2>
-        <p className="text-violet-700 text-lg mb-2">
+        <p className="text-orange-700 text-lg mb-2">
           <span className="font-bold">KL Vitesh Reddy</span>
         </p>
-        <p className="text-violet-600">
+        <p className="text-orange-600">
           Full Stack Developer
         </p>
       </div>

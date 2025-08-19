@@ -20,7 +20,7 @@ const Guide = () => {
         </pre>
         <button
           onClick={() => copyToClipboard(children)}
-          className="absolute top-4 right-4 bg-violet-600 hover:bg-violet-700 text-white px-3 py-2 rounded-lg text-xs font-medium transition-colors duration-200 flex items-center space-x-1"
+          className="absolute top-4 right-4 bg-orange-600 hover:bg-orange-700 text-white px-3 py-2 rounded-lg text-xs font-medium transition-colors duration-200 flex items-center space-x-1"
         >
           <span>📋</span>
           <span>Copy</span>
@@ -29,9 +29,9 @@ const Guide = () => {
     </div>
   );
 
-  const MethodCard = ({ method, description, example, usage, color = 'violet' }) => {
+  const MethodCard = ({ method, description, example, usage, color = 'orange' }) => {
     const colorClasses = {
-      violet: 'from-violet-50 to-purple-50 border-violet-200',
+      orange: 'from-orange-50 to-orange-50 border-orange-200',
       emerald: 'from-emerald-50 to-teal-50 border-emerald-200',
       rose: 'from-rose-50 to-pink-50 border-rose-200',
       amber: 'from-amber-50 to-orange-50 border-amber-200',
@@ -60,7 +60,7 @@ const Guide = () => {
   return (
     <div className="max-w-4xl mx-auto space-y-16">
       <div className="text-center space-y-6">
-        <h1 className="text-5xl font-black bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
+        <h1 className="text-5xl font-black bg-gradient-to-r from-orange-600 to-orange-600 bg-clip-text text-transparent">
           Complete Guide
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -145,14 +145,14 @@ export const customToast = {
           </div>
         </section>
 
-        <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-8 border border-purple-200/50">
-          <h2 className="text-3xl font-bold text-purple-900 mb-6 flex items-center">
-            <span className="bg-purple-100 text-purple-600 rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4">3</span>
+        <section className="bg-gradient-to-br from-orange-50 to-pink-50 rounded-3xl p-8 border border-orange-200/50">
+          <h2 className="text-3xl font-bold text-orange-900 mb-6 flex items-center">
+            <span className="bg-orange-100 text-orange-600 rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold mr-4">3</span>
             Add to Your App
           </h2>
           <div className="space-y-6">
             <div>
-              <p className="text-purple-800 mb-4 text-lg">Import and add the CustomToaster to your main App component:</p>
+              <p className="text-orange-800 mb-4 text-lg">Import and add the CustomToaster to your main App component:</p>
               <CodeBlock title="src/App.jsx">
 {`import React from 'react';
 import { CustomToaster } from './utils/CustomToast';
@@ -299,14 +299,14 @@ customToast.promise(fetchUserData(), {
           </div>
         </section>
 
-        <div className="bg-gradient-to-br from-violet-100 to-purple-100 rounded-3xl p-8 border border-violet-200/50 text-center">
-          <h2 className="text-3xl font-bold text-violet-900 mb-4">🚀 You're Ready!</h2>
-          <p className="text-violet-700 text-lg mb-6">
+        <div className="bg-gradient-to-br from-orange-100 to-orange-100 rounded-3xl p-8 border border-orange-200/50 text-center">
+          <h2 className="text-3xl font-bold text-orange-900 mb-4">🚀 You're Ready!</h2>
+          <p className="text-orange-700 text-lg mb-6">
             CustomToast is now set up and ready to make your app more delightful!
           </p>
           <button
             onClick={() => customToast.success('Welcome to the CustomToast family! 🎉')}
-            className="bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white px-8 py-3 rounded-2xl font-bold transition-all duration-200 transform hover:scale-105"
+            className="bg-gradient-to-r from-orange-600 to-orange-600 hover:from-orange-700 hover:to-orange-700 text-white px-8 py-3 rounded-2xl font-bold transition-all duration-200 transform hover:scale-105"
           >
             ✨ Test Your Setup
           </button>

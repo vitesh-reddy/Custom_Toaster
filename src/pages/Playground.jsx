@@ -48,7 +48,7 @@ const Playground = () => {
   return (
     <div className="max-w-5xl mx-auto space-y-16">
       <div className="text-center space-y-6">
-        <h1 className="text-5xl font-black bg-gradient-to-r from-pink-500 to-violet-600 bg-clip-text text-transparent">
+        <h1 className="text-5xl font-black bg-gradient-to-r from-pink-500 to-orange-600 bg-clip-text text-transparent">
           Playground
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -83,7 +83,7 @@ const Playground = () => {
 
         <ToastButton
           onClick={handleSequentialSuccess}
-          className="bg-gradient-to-br from-violet-500 to-purple-600 hover:from-violet-600 hover:to-purple-700"
+          className="bg-gradient-to-br from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700"
           icon="🎯"
           title="Sequential Success"
           description="Loading → Success flow"
@@ -151,7 +151,7 @@ const Playground = () => {
               customToast.loading("Step 1 of 3...");
               setTimeout(() => customToast.endLoadAndSuccess("Process completed! 🎊"), 2500);
             }}
-            className="bg-gradient-to-r from-purple-500 to-violet-500 hover:from-purple-600 hover:to-violet-600 text-white px-4 py-3 rounded-xl font-medium transition-all duration-200"
+            className="bg-gradient-to-r from-orange-500 to-orange-500 hover:from-orange-600 hover:to-orange-600 text-white px-4 py-3 rounded-xl font-medium transition-all duration-200"
           >
             🔄 Multi-Step
           </button>
@@ -200,14 +200,14 @@ const Playground = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-pink-100 to-violet-100 rounded-3xl p-8 border border-pink-200 text-center">
+      <div className="bg-gradient-to-r from-pink-100 to-orange-100 rounded-3xl p-8 border border-pink-200 text-center">
         <h2 className="text-3xl font-bold text-pink-900 mb-4">🎨 Loving the Design?</h2>
         <p className="text-pink-700 text-lg mb-6">
           CustomToast brings beautiful notifications to your React apps with zero configuration needed!
         </p>
         <button
           onClick={() => customToast.success('Thanks for trying CustomToast! Made with 💜 by Vitesh')}
-          className="bg-gradient-to-r from-pink-600 to-violet-600 hover:from-pink-700 hover:to-violet-700 text-white px-8 py-3 rounded-2xl font-bold transition-all duration-200 transform hover:scale-105"
+          className="bg-gradient-to-r from-pink-600 to-orange-600 hover:from-pink-700 hover:to-orange-700 text-white px-8 py-3 rounded-2xl font-bold transition-all duration-200 transform hover:scale-105"
         >
           💜 Show Some Love
         </button>

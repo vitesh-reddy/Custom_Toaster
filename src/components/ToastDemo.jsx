@@ -71,7 +71,7 @@ const ToastDemo = () => {
 
         <button
           onClick={handlePromiseToast}
-          className="px-4 py-2 rounded-lg bg-purple-500 text-white hover:bg-purple-600"
+          className="px-4 py-2 rounded-lg bg-orange-500 text-white hover:bg-orange-600"
         >
           🔄 Promise Toast
         </button>

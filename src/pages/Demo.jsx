@@ -74,7 +74,7 @@ const Demo = () => {
       label: "Promise Toast",
       icon: "🔄",
       action: handlePromiseToast,
-      className: "bg-purple-500 hover:bg-purple-600",
+      className: "bg-orange-500 hover:bg-orange-600",
       description: "Automatically handles promise states"
     }
   ];
