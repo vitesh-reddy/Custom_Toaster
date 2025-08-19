@@ -2,9 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import Installation from './pages/Installation';
-import Demo from './pages/Demo';
-import APIReference from './pages/APIReference';
+import Guide from './pages/Guide';
+import Playground from './pages/Playground';
 import { CustomToaster } from './utils/CustomToast';
 
 function App() {
@@ -12,11 +11,10 @@ function App() {
     <Router>
       <CustomToaster/>
       <Layout>
-        <Routes>          
+        <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/installation" element={<Installation />} />
-          <Route path="/demo" element={<Demo />} />
-          <Route path="/api" element={<APIReference />} />
+          <Route path="/guide" element={<Guide />} />
+          <Route path="/playground" element={<Playground />} />
         </Routes>
       </Layout>
     </Router>
