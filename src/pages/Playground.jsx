@@ -105,59 +105,7 @@ const Playground = () => {
           description="Automatic state management"
         />
       </div>
-
-      <div className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 border border-gray-200">
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Utilities</h2>
-            <p className="text-gray-600 font-light">Control and customize your toast experience</p>
-          </div>
-          <button
-            onClick={() => customToast.dismiss()}
-            className="mt-4 sm:mt-0 bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white px-6 py-3 rounded-xl font-medium transition-all duration-200 transform hover:scale-105"
-          >
-            Clear All Toasts
-          </button>
-        </div>
-        
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <button
-            onClick={() => {
-              customToast.success("First toast");
-              setTimeout(() => customToast.success("Second toast"), 500);
-              setTimeout(() => customToast.success("Third toast"), 1000);
-            }}
-            className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-4 py-3 rounded-xl font-medium transition-all duration-200"
-          >
-            Multiple Toasts
-          </button>
-          
-          <button
-            onClick={() => customToast.success("This will stay for 10 seconds", { duration: 10000 })}
-            className="bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white px-4 py-3 rounded-xl font-medium transition-all duration-200"
-          >
-            Long Duration
-          </button>
-          
-          <button
-            onClick={() => customToast.success("Quick toast", { duration: 1000 })}
-            className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-4 py-3 rounded-xl font-medium transition-all duration-200"
-          >
-            Quick Toast
-          </button>
-          
-          <button
-            onClick={() => {
-              customToast.loading("Step 1 of 3...");
-              setTimeout(() => customToast.endLoadAndSuccess("Process completed"), 2500);
-            }}
-            className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-4 py-3 rounded-xl font-medium transition-all duration-200"
-          >
-            Multi-Step Process
-          </button>
-        </div>
-      </div>
-
+      
       <div className="grid md:grid-cols-2 gap-8">
         <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 border border-emerald-200">
           <h3 className="text-xl font-bold text-emerald-900 mb-4">When to use endLoad methods</h3>
