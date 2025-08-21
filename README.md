@@ -1,4 +1,4 @@
-# 🚀 Custom Toast Demo
+# 🚀 Custom Toaster by Vitesh
 
 A React project showcasing a **custom toast notification system** built on top of [`react-hot-toast`](https://react-hot-toast.com/).  
 This demo provides reusable functions for success, error, loading, promise-based, and dismissible toasts.
@@ -20,7 +20,7 @@ This demo provides reusable functions for success, error, loading, promise-based
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/custom-toast-demo.git
-   cd custom-toast-demo
+   cd Custom_Toaster
    ```
 
 2. Install dependencies:
