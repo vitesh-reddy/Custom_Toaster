@@ -1,12 +1,118 @@
-# React + Vite
+# 🚀 Custom Toast Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React project showcasing a **custom toast notification system** built on top of [`react-hot-toast`](https://react-hot-toast.com/).  
+This demo provides reusable functions for success, error, loading, promise-based, and dismissible toasts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Features
+- ✅ Success, Error, Loading toasts  
+- ✅ End loading with success or error  
+- ✅ Promise-based toasts (auto-handled states)  
+- ✅ Dismiss all toasts  
+- ✅ Custom **Button** component (no external UI library required)  
+- ⚡ Built with TailwindCSS for styling  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/custom-toast-demo.git
+   cd custom-toast-demo
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├─ components/
+ │   ├─ Button.jsx        # Reusable button component (Tailwind styled)
+ │   └─ ToastDemo.jsx     # Demo page with all toast examples
+ │
+ ├─ utils/
+ │   └─ CustomToast.jsx   # Toast utility with reusable functions
+ │
+ ├─ App.jsx               # Main app entry
+ └─ main.jsx              # React entry point
+```
+
+---
+
+## ⚡ Usage
+
+### Import toaster in `App.jsx`
+```jsx
+import { CustomToaster } from "./utils/CustomToast";
+import ToastDemo from "./components/ToastDemo";
+
+function App() {
+  return (
+    <div>
+      <CustomToaster />
+      <ToastDemo />
+    </div>
+  );
+}
+
+export default App;
+```
+
+### Example: Trigger a success toast
+```jsx
+import { customToast } from "../utils/CustomToast";
+
+customToast.success("Operation successful!");
+```
+
+### Example: Trigger a promise-based toast
+```jsx
+customToast.promise(
+  fetch("/api/data").then(res => res.json()),
+  {
+    loading: "Fetching data...",
+    success: "Data loaded successfully!",
+    error: "Failed to load data.",
+  }
+);
+```
+
+---
+
+## 🌈 Toast Types Available
+
+- `customToast.success("Message")`
+- `customToast.error("Message")`
+- `customToast.loading("Message")`
+- `customToast.endLoadAndSuccess("Message")`
+- `customToast.endLoadAndError("Message")`
+- `customToast.promise(promise, { loading, success, error })`
+- `customToast.dismiss()`
+
+---
+
+## 📸 Demo Preview
+
+> Buttons to trigger different toast types:
+
+![Toast Demo Screenshot](https://raw.githubusercontent.com/your-username/custom-toast-demo/main/demo.png)
+
+---
+
+## 📜 License
+MIT License © 2025  
+Feel free to use and modify for your projects.
+
